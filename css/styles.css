@@ -1,0 +1,800 @@
+/* ===============
+	Google Fonts
+==================*/
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ===============
+	Global Css
+================== */
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'GFS Neohellenic', sans-serif;
+}
+
+/* =================
+	Bottom Menu
+==================== */
+
+.bottom-menu {
+	background: #16ba0a;
+}
+.Log-tag a {
+	float: left;
+    padding: 18px;
+    color: #fff;
+    font-size: 12px;
+}
+.delivery-tag ul li {
+	float: left;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.delivery-tag .fa-truck {
+	width: 22px;
+}
+
+.delivery-tag .fa-arrow-rotate-left {
+	width: 16px;
+}
+
+.social-tag h4 {
+	float: left;
+    font-size: 12px;
+    padding: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.social-tag ul li {
+	float: left;
+    margin: 0 8px;
+    font-size: 12px;
+    padding: 3px 0;
+    color: #fff;
+}
+
+.social-tag ul li a {
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+}
+
+.social-tag ul li a:hover {
+	color: #343434;
+}
+
+/* ====================
+	Logo & Search Menu
+======================= */
+
+.search-menu {
+	padding-bottom: 14px;
+}
+.search-bar ul li {
+	float: left;
+    margin: 10px 4px;
+    padding: 0 20px;
+}
+
+.search-bar ul li a {
+	color: #000;
+}
+
+.form-control1 {
+	border: 1px solid #e5e2e2;
+    padding: 8px;
+    width: 400px;
+    outline: none;
+}
+
+.form-control1:focus {
+	border: 1px solid #16ba0a;
+}
+.search {
+	border: none;
+    padding: 0 22px;
+    background: #16ba0a;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+.search:hover {
+	background: #383636;
+	color: #fff;
+}
+.cart-item {
+	margin-top: 18px !important;
+    font-size: 14px;
+}
+
+/* ================
+	Header Section
+=================== */
+
+header {
+	background: #343434;
+	width: 100%;
+}
+
+.menu-bar ul li {
+	position: relative;
+	float: left;
+	display: block;
+	color: #fff;
+    margin-left: 50px;
+    padding: 14px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.menu-bar ul li::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #16BA0A;
+	left: -100%;
+	bottom: 0;
+	transition: all 0.3s ease-in-out;
+}
+.menu-bar ul li:hover::after {
+	left: 0%;
+	right: 0%;
+}
+.menu-bar ul li:hover {
+	color: #16ba0a;
+	cursor: pointer;
+}
+
+
+
+/* ========================
+	Mobile Responsive Menu
+=========================== */
+
+.mobile-menu {
+/* 	background: #fff; */
+	display: none;
+}
+
+.nav-link {
+	color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 8px 10px;
+}
+
+
+
+/* ================
+	Banner Section
+=================== */
+
+.banner-section {
+	background: url(../img/banner1.png) no-repeat center top;
+	width: 100%;
+	padding: 50px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.banner-section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(22, 224, 4, .5);
+	z-index: -1;
+}
+
+.banner-content {
+	margin: 120px 0;
+}
+
+.fa-thin {
+
+}
+
+.banner-content h2 {
+	font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-weight: 800;
+}
+
+.btn-submit {
+	padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-submit:hover {
+	background: #343434;
+	color: #fff;
+}
+
+/* =======================
+	Product Slier Section
+=========================== */
+
+.product-slider-section {
+	padding: 50px 0;
+}
+
+.slide-row {
+	margin-top: 50px;
+}
+.silder-head h2 {
+	text-align: center;
+	font-size: 50px;
+	color: #343434;
+	font-weight: 700;
+}
+
+.product-separator {
+	margin: 0 auto;
+    width: 7%;
+    height: 5px;
+    background: #16ba0a;
+}
+
+.slider-content {
+	padding: 26px;
+}
+
+.slide-row-one {
+	margin-top: 50px;
+}
+
+.slider-content ul li {
+	display: inline;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.slider-content ul li:last-child {
+	float: right;
+}
+
+.slider-content ul li span {
+	color: #16ba0a;
+}
+
+.slider-content a {
+	float: right;
+	text-transform: uppercase;
+	color: #be713d;
+	font-weight: 500;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #16ba0a;
+}
+
+/* =================
+	Choose Our Food
+==================== */
+.food-chooser {
+	padding: 50px 0;
+}
+
+.choose-head h2 {
+	font-size: 50px;
+	text-align: center;
+	font-family: 'GFS Neohellenic', sans-serif;
+	color: #343434;
+	font-weight: 600;
+}
+
+.choose-separator {
+	width: 8%;
+	margin: 0 auto;
+	height: 6px;
+	background: #16ba0a;
+}
+
+.service-content {
+	margin-top: 50px;
+}
+.img-bg {
+	display: block;
+    margin: 0 auto;
+    background: #464646;
+    padding: 38px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.service-content h2 {
+	text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #464646;
+}
+
+.service-content p {
+	text-align: center;
+	padding: 0px 47px;
+    font-size: 16px;
+    color: #464646;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.btn-readmore {
+	margin: 32px auto 0;
+    display: block;
+    padding: 6px 20px;
+    font-weight: 600;
+    border: none;
+    background: #464646;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.btn-readmore:hover {
+	background: #464646;
+}
+
+.bg-color {
+	background: #16ba0a;
+}
+
+/* ===================
+	About Foods
+====================== */
+.about-food {
+	background: url(../img/bg-img2.png) no-repeat center top;
+	width: 100%;
+	padding: 60px 0;
+	position: relative;
+	z-index: 1;
+	
+}
+
+.about-food::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: -1;
+}
+
+.about-food h2 {
+	margin-top: 30px;
+    text-align: center;
+    font-family: 'GFS Neohellenic', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.about-separator {
+	margin: 0 auto;
+	width: 8%;
+	height: 6px;
+	background: #16ba0a;
+}
+.about-food p {
+	color: #fff;
+    margin-top: 100px;
+    font-size: 13px;
+    text-align: center;
+    padding: 0 19px;
+}
+
+.redmore-btn {
+	display: block;
+	margin: 70px auto 0;
+	padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #16ba0a;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.redmore-btn:hover {
+	background: #464646;
+	color: #fff;
+}
+
+/* ==================
+	Latest News
+===================== */
+.latest-news {
+	padding: 80px 0;
+}
+.latest-news h2 {
+	font-size: 50px;
+	font-family: 'GFS Neohellenic', sans-serif;
+	text-align: center;
+	color: #464646;
+	font-weight: 800;
+
+}
+.news-separator {
+	margin: 0 auto;
+	width: 8%;
+	height: 6px;
+	background: #16ba0a;
+}
+
+.news-row {
+	margin-top: 30px;
+}
+.news-row img {
+	margin-top: 20px;
+}
+.news-content h3 {
+	margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #464646;
+}
+.news-content p {
+	margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #464646;
+    padding-right: 14px;
+    line-height: 26px;
+}
+.btn-news {
+	margin-top: 50px;
+    border: none;
+    background: #16ba0a;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.btn-news:hover {
+	background: #464646;
+}
+
+.latest-news2 {
+	padding: 50px 0;
+}
+
+.news-content2 h3 {
+	margin-top: 20px;
+    font-size: 30px;
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-weight: 600;
+    color: #464646;
+}
+
+.news-content2 p {
+	font-size: 12px;
+    padding-right: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.btn-news2 {
+	margin-top: 50px;
+    border: none;
+    background: #16ba0a;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.btn-news2:hover {
+	background: #464646;
+}
+.latest-news2 img {
+	height: 100%;
+    width: 46%;
+    margin-left: 120px;
+}
+
+/* =====================
+	Testimonial Section
+======================== */
+.testimonial-section {
+	padding: 50px 0;
+}
+.testimonial-section h2 {
+	margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-weight: 700;
+    color: #464646;
+}
+.testimonial-separator {
+	margin: 0 auto;
+	width: 8%;
+    height: 5px;
+    background: #16ba0a;
+}
+.content-cs h3{
+	font-size: 16px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content-cs h4{
+	font-size: 10px;
+    margin-top: 5px;
+    color: #16ba0a;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.customer-1 p {
+	font-size: 12px;
+    padding-right: 115px;
+    font-weight: 600;
+}
+.customer-2 p {
+	font-size: 12px;
+    padding-right: 115px;
+    font-weight: 600;
+}
+
+/* =================
+	Contact Section
+==================== */
+
+.contact-section {
+	padding: 50px 0;
+}
+
+.contact-section h2 {
+	font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: #464646;
+}
+
+.contact-separator {
+	margin: 0 auto;
+	width: 8%;
+    height: 5px;
+    background: #16ba0a;
+}
+
+.contact-mt {
+	margin-top: 50px;
+}
+
+.form-control {
+	padding: 12px 20px;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 0;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border: 1px solid #16ba0a;
+}
+
+.btn-contact {
+	margin: 38px auto 0;
+    display: block;
+    padding: 7px 36px;
+    border: none;
+    border-radius: 5px;
+    background: #16ba0a;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+	background: #464646;
+}
+
+
+/* ===========
+	Footer 
+============== */
+
+footer {
+	padding: 50px 0 0;
+	background: #252525;
+}
+
+.footer-border {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #16ba0a;
+}
+
+.footer-logo h4 {
+	color: #16ba0a;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.footer-logo h4 span {
+	color: #fff;
+}
+
+.footer-logo p {
+	color: #fff;
+}
+
+.footer-header h3 {
+	position: relative;
+	margin: 18px 0;
+	color: #fff;
+    font-size: 30px;
+   	font-weight: 500;
+}
+
+.footer-header h3::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 15%;
+	height: 3px;
+	background: #16ba0a;
+}
+
+
+.link-items ul li a {
+	color: #fff;
+    line-height: 30px;
+    transition: all 0.3s;
+}
+
+.link-items ul li a:hover {
+	padding-left: 5px;
+	color: #16ba0a;
+	font-weight: 500;
+}
+
+.address ul li {
+	color: #fff;
+	line-height: 30px;
+}
+
+.address ul li .fa-location-dot {
+	width: 25px;
+}
+
+.address ul li .fa-phone {
+	width: 25px;
+}
+
+.address ul li .fa-envelope {
+	width: 25px;
+}
+
+.social-network {
+	margin: 26px 0 0;
+}
+
+.social-network ul li {
+	display: inline-block;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+	border-radius: 3px;
+	text-align: center;
+	background: #fff;
+    line-height: 32px;
+}
+
+.social-network ul li a {
+	color: #464646;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-network ul li a:hover {
+	color: #16ba0a;
+}
+
+.copyright p {
+	margin-top: 20px;
+	color: #fff;
+}
+
+/* Responsive For Mobile */
+
+@media (min-width: 320px) and (max-width: 576px) {
+	.bottom-menu {display: none;}
+	.search-bar ul li a img {display: none;}
+	.form-control1 {width: 70%;border: 1px solid #343434;background: transparent;}
+	.form-control1::placeholder {color: #fff;}
+	.form-control1:focus {border: 1px solid #343434;}
+	.search-menu {background: #16ba0a;}
+	.search {background: #343434;}
+	.search-bar ul li a {color: #fff;}
+	.menu-bar {display: none;}
+	.mobile-menu {padding: 12px 0;display: block;background: #fff;}
+	.navbar-brand img {width: 60%;}
+	.banner-section {padding: 30px 0;}
+	.banner-content {margin: 50px 0;}
+	.banner-content h2 {font-size: 45px;}
+	.btn-submit {padding: 10px 28px;}
+	.product-slider-section {padding: 30px 0;}
+	.silder-head h2 {font-size: 40px;}
+	.product-separator {width: 12%;}
+	.slide-row-one {margin-top: 30px;}
+	.slider-content img {width: 80%!important;}
+	.food-chooser {padding: 30px 0;}
+	.choose-head h2 {font-size: 36px;}
+	.choose-separator {width: 16%;}
+	.img-bg {display: block;margin: 0 auto;}
+	.service-content h2 {padding: 0;margin-bottom: 26px;}
+	.service-content p {text-align: center;padding: 0px 30px;}
+	.btn-readmore {margin: 0 auto 26px;display: block;}
+	.about-food {padding: 30px 0;}
+	.about-food h2 {margin: 0; font-size: 40px;}
+	.about-separator {width: 15%;}
+	.about-food p {margin-top: 30px;padding: 0 20px;}
+	.redmore-btn {margin: 30px auto 20px;padding: 8px 24px;}
+	.latest-news {padding: 30px 0;}
+	.latest-news h2 {font-size: 40px;}
+	.news-separator {width: 14%;}
+	.news-content {text-align: center;}
+	.btn-news {margin: 0;padding: 8px 24px;}
+	.latest-news2 {padding: 0;text-align: center;}
+	.btn-news2 {margin: 0 0 30px;}
+	.latest-news2 img {width: 60%;margin: 0;}
+	.testimonial-section {padding: 30px 0 0;}
+	.testimonial-section h2 {margin: 0;font-size: 40px;}
+	.testimonial-separator {width: 13%;}
+	.customer-details1 {text-align: center;}
+	.customer-1 p {text-align: center;padding: 0 10px 20px;}
+	.customer-2 {text-align: center;}
+	.customer-2 p {padding: 0 10px 20px;}
+	.contact-section {padding: 0 0 20px;}
+	.contact-section h2 {font-size: 40px;}
+	.contact-separator {width: 15%;}
+	.contact-mt {margin-top: 40px;}
+	.form-control {width: 80%;}
+	footer {padding: 30px 0 0;}
+	.footer-logo h4 {text-align: center;font-size: 45px;}
+	.footer-logo p {text-align: center;}
+	.footer-header h3 {text-align: center;margin: 0 0 18px;}
+	.footer-header h3::after {left: 42%;}
+	.link-items {text-align: center;}
+	.address {text-align: center;}
+	.social-network {text-align: center;}
+
+}
